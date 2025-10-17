@@ -1,0 +1,528 @@
+/* This CSS is based on SIMPLE GRID by ZACH COLE 2016 */
+
+/* RESET any default browser styling */
+/* you won't need to change anything here */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  background-color:#050505;
+}
+
+
+/* we want images to be 100% width of the column they are in within the grid */
+/* you should not need to edit this */
+img{
+  width: 100%;
+  margin: 18px 0 18px 0;
+}
+
+/*TITLE STUFF*/
+.topbox {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+.logo {
+    width:113px;
+    height:113px;
+}
+
+.topbox img {
+float:right;
+}
+
+.title {
+    font-size:2.5rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    color:#ffffff;
+    letter-spacing: 2px;
+}
+
+.hide {
+    display:none;
+    font-size:15px;
+}
+
+.logo:hover + .hide {
+    display:block;
+    align-content: space-around;
+    
+}
+
+/* Paragraph FONT STYLES */
+/* edit these to reflect how you would like you copy text to appear */
+
+* {
+  font-family: 'Geologica', sans-serif;
+  color: #fefefe;
+}
+
+/* HEADING FONT STYLES */
+/* edit these to reflect how you would like you Header text to appear */
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Geologica', sans-serif;
+  font-weight:500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Geologica', sans-serif;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-family: 'Geologica', sans-serif;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight:300;
+  margin: 18px 0 18px 0;
+}
+
+.body {
+  font-size:0.875rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a h2:hover {
+   color:#ff45ff;
+}
+
+a p:hover, a p:active {font-family: 'Pixelify Sans';letter-spacing: 1px;color:#ffffff;}
+
+.aboutlink:hover {
+    text-decoration: underline;
+}
+
+/* POSITIONING */
+/* add these classes to position an element */
+/* eg: <h1 class="center">A centered title</h1> */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+
+/* COLOURS */
+
+.pink {
+    color:#ff45ff;
+}
+
+/*IMAGES*/
+
+
+/* ==== GRID SYSTEM ==== */
+/* don't need to edit anything from here down */
+/* this sets up the responsive grid for you which you can use in your html */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  p {
+    font-size: 1rem;
+  }
+
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+    
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  p {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+.acknowledgement {
+  text-align: right;
+  font-size: 10px;
+}
+
+/*Typewriter effect*/
+/*Code provided by Geoff Graham on CSS-Tricks https://css-tricks.com/snippets/css/typewriter-effect/*/
+.css-typing p {
+  border-right: .15em solid #ff45ff;
+  font-family: 'Pixelify Sans';
+  font-size: 2.5rem;
+  color:#ff45ff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 4.2em;
+  -webkit-animation: type 1s steps(20, end);
+  animation: type 1s steps(20, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 8em;
+  opacity: 0;
+  -webkit-animation: type2 1s steps(40, end);
+  animation: type2 1s steps(40, end);
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+width: 12em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+  width: 9em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(20, end), blink .2s step-end infinite alternate;
+  animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #ff45ff;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #ff45ff;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #44aa53;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #ff45ff;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
+
+
+
+/*Slideshow*/
+/*Code provided by W3Schools https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+.mySlides img{
+height:30%;
+width:30%;
+display: block;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.mySlidesHandType img{
+height:40%;
+width:40%;
+display: block;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}

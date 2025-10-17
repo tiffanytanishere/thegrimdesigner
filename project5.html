@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang=en>
+	<!-- this is the base html file for a layout for a single project page -->
+	<!-- it uses simpleGrid as an underlying responsive grid over 12 columns -->
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- change the title here to suite the project you are showcasing -->
+		<title>Project Five</title>
+
+		<!-- change the following if you are using a different google fonts combination -->
+		<!-- here we are using Open Sans & Roboto -->
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600&family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+		<!-- this is a link the the stylesheet -->
+		<!-- the style sheet is also commented where you could make changes -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<!-- the container must surround all of the content within your grid -->
+    <div class="container">
+
+			<!-- each set of columns (adding up to 12) must be in a row -->
+			<div class="row">
+
+				<!-- define columns using a class="col-x" where x is between 1 & 12 -->
+				<!-- the total of all col-x in a row must equal 12 -->
+				<!-- our first row contains a colum of full witdh of 12 -->
+				<!-- it will contain a title and a hero image -->
+
+					<!-- this is our title for our website, we will keep it the same on every page-->
+					<!-- it is a H2, as the most iportant heading is the title of the project itself -->
+  <div class="row">
+           <div class="topbox">
+               <div class="col-12">
+                    <a href="index.html"><h2 class="title">The Grim Designer</h2></a>
+               </div>
+                <div class="col-4">
+                    <a href="about.html">
+                  <img src="img/logo.jpg" alt="logo" class="logo">
+                  <p class="hide">Learn more about me!</p>
+                    </a>
+                </div>
+            </div>
+         </div>
+
+                
+<div class="row">
+
+				<div class="col-5">
+					<!-- a sub heading -->
+<h2>Generative Agate</h2>
+				</div> <!-- closing col-4 DIV -->
+
+				<div class="col-7">
+					<!-- a descriptive paragraph -->
+					<p class="body">Struck by the naturally occurring geometric patterns of agate, I created a generative art series in p5.js that seeks to translate this beauty into the digital realm. 
+Try refreshing the page to generate a new and different form of agate!</p>
+				</div> <!-- closing col-8 DIV -->
+			</div> <!-- closing row DIV -->
+				
+<div class="row">
+	<div class="col-12">
+	<img src="img/agateprint.jpg" alt="Print of generative art series of agate">
+	</div>
+</div>
+				
+<div class="row">
+	<div class="col-12">
+	<iframe src="https://editor.p5js.org/tiffanytanishere/full/7CpFlxnXQ" height="442px" width="400px" class="center" title="Generative agate art"></iframe>
+	</div>
+</div>
+				
+
+</div>
+        
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlidesHandType");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+		
+			<!-- we will now add a new row and some columns with content -->
+			<!-- this time we have a set of 3 images -->
+			<!-- don't forget the image alt attributes -->
+			<div class="row">
+               <div class="col-3">
+					<a href="project1.html">
+						<img src="img/homunculusdisplay.jpg" alt="Square display image of the front cover of Homunculus publication">
+					</a>
+				</div>    
+				
+				<div class="col-3">
+					<a href="project2.html">
+						<img src="img/aevinithraaldisplay.jpg" alt="Square display image of the front cover of The Epic of Aevin Ithraal publication">
+					</a>
+				</div> <!-- closing col-4 DIV -->
+                
+				<div class="col-3">
+					<a href="project3.html">
+						<img src="img/invadersdisplay.jpg" alt="Square display image of a still shot of Invisible Invaders video">
+					</a>
+				</div> <!-- closing col-4 DIV -->
+
+				<div class="col-3">
+					<a href="project4.html">
+						<img src="img/helloworlddisplay.jpg" alt="Square display image of Hello, World! generative typeface">
+					</a>
+				</div> <!-- closing col-4 DIV -->
+                
+			</div> <!-- closing row DIV -->
+
+        
+        
+        
+			<!-- this is a footer row, we will keep it the same on every page -->
+<div class="row">
+    <div class="col-8">
+        <p class="copyright">© Copyright 2025 Tiffany Tan </p>     
+    </div>
+    
+    <div class="col-4">
+        <p class="acknowledgement">I acknowledge the Bidjigal people of the Eora Nation, the Traditional Custodians of the Land where I live and work on.
+        I pay respect to Elders past, present and emerging. Sovereignty was and will never be ceded.</p>   
+    </div>  
+ </div>
+
+    </div> <!-- closing container DIV -->
+  </body>
+</html>
